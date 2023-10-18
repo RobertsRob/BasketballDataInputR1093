@@ -13,15 +13,15 @@
             <h1 class="headerMain">Basketbola datu ievads</h1>
             <div class="textUinput">
                 <b class="inputText">Laiks: </b>
-                <input type="text" class="inputsInf" id="inputTime">
+                <input type="text" class="inputsInf" id="inputTime" minlength="2" maxlength="25">
             </div>
             <div class="textUinput">
                 <b class="inputText">Komandas nosaukums: </b>
-                <input type="text" class="inputsInf" id="inputTeamName">
+                <input type="text" class="inputsInf" id="inputTeamName" minlength="2" maxlength="100">
             </div>
             <div class="textUinput">
                 <b class="inputText">Spēlētajā vārds un uzvārds: </b>
-                <input type="text" class="inputsInf" id="inputSAname">
+                <input type="text" class="inputsInf" id="inputSAname" minlength="2" maxlength="100">
             </div>
             <div class="textUinput">
                 <b class="inputText">Spēlētājs ieguva punktus: </b>
@@ -32,8 +32,8 @@
                 </select>
             </div>
             <div class="textUinput">
-                <b class="inputText">Ievadītas komandas esošas spēles rezultāts: </b><input type="number" class="inputsInf w6Px" min="0" id="teamEs"> <br>
-                <b class="inputText">Pretinieku komandas esošas spēles rezultāts: </b><input type="number" class="inputsInf w6Px" min="0" id="teamAn">
+                <b class="inputText">Ievadītas komandas esošas spēles rezultāts: </b><input type="number" class="inputsInf w6Px" min="0" id="teamEs" max="999"> <br>
+                <b class="inputText">Pretinieku komandas esošas spēles rezultāts: </b><input type="number" class="inputsInf w6Px" min="0" id="teamAn" max="999">
             </div>
 
             <div class="button">
