@@ -1,4 +1,27 @@
+let listArMn = [];
 function buttonPress()
+{
+    let infoWhatAllTable = "";
+    for(let i = 0; i < listArMn.length; i++)
+    {
+        infoWhatAllTable = infoWhatAllTable + listArMn[i];
+    }
+    if(listArMn.length >= 1)
+    {
+        
+        let content = "Laiks,Komandas nosaukums,Spēlētaja vārds,Punktus ieguva,Esošais spēles rezultāts" + infoWhatAllTable;
+    
+        // const csvBlob = new Blob(["1, 5"]);
+        const csvBlob = new Blob([content]);
+    
+        a2.download = "basketbolaDatuIevads.csv";
+    
+        a2.href = URL.createObjectURL(csvBlob);
+    
+        a2.click();
+    }
+}
+function newVrInp()
 {
     let valTime = document.getElementById("inputTime").value;
     let valTeamName = document.getElementById("inputTeamName").value;
@@ -18,15 +41,6 @@ function buttonPress()
         return;
     }
     let gameResult = valTeamEsos + ":" + valTeamAnother;
-    let content = "Laiks,Komandas nosaukums,Spēlētaja vārds,Punktus ieguva,Esošais spēles rezultāts" + "\n" + valTime + "," + valTeamName + "," + valName + "," + valPointsGet + "," + gameResult + "\n";
-
-    // const csvBlob = new Blob(["1, 5"]);
-    const csvBlob = new Blob([content]);
-
-    a2.download = "basketbolaDatuIevads.csv";
-
-    a2.href = URL.createObjectURL(csvBlob);
-
-    a2.click();
-
+    let whTP = "\n" + valTime + "," + valTeamName + "," + valName + "," + valPointsGet + "," + gameResult;
+    listArMn.push(whTP);
 }
