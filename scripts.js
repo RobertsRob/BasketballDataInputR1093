@@ -55,5 +55,5 @@ function newVrInp()
 
     Swal.fire(
   'Fails bija lejupieladēt!'
-)
+    )
 }
