@@ -40,7 +40,6 @@ function newVrInp()
     let valTeamEsos = document.getElementById("teamEs").value;
     let valTeamAnother = document.getElementById("teamAn").value;
 
-
     if(valTime.length < 2 || valTeamName.length < 2 || valName.length < 2|| valTeamEsos.length < 1|| valTeamAnother.length < 1)
     {
         Swal.fire({
