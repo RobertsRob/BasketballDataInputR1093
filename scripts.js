@@ -20,7 +20,11 @@ function buttonPress()
     
         a2.click();
 
-        Swal.fire(icon: 'success', title:'Fails bija lejupieladēts!')
+        Swal.fire(
+  'Fails tika lejupieladets!',
+  'Poga bija uzspiesta!',
+  'success'
+)
     }
     else
     {
