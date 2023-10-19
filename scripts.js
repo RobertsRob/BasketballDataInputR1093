@@ -19,6 +19,8 @@ function buttonPress()
         a2.href = URL.createObjectURL(csvBlob);
     
         a2.click();
+
+        Swal.fire('Fails bija lejupieladēt!')
     }
     else
     {
@@ -51,9 +53,4 @@ function newVrInp()
     let gameResult = valTeamEsos + ":" + valTeamAnother;
     let whTP = "\n" + valTime + "," + valTeamName + "," + valName + "," + valPointsGet + "," + gameResult;
     listArMn.push(whTP);
-
-
-    Swal.fire(
-  'Fails bija lejupieladēt!'
-    )
 }
