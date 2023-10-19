@@ -20,7 +20,7 @@ function buttonPress()
     
         a2.click();
 
-        Swal.fire('Fails bija lejupieladēt!')
+        Swal.fire('Fails bija lejupieladēts!')
     }
     else
     {
