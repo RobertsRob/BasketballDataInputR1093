@@ -20,6 +20,14 @@ function buttonPress()
     
         a2.click();
     }
+    else
+    {
+        Swal.fire({
+          icon: 'error',
+          title: 'Uzspied pogu pievienot iemetienu sakumā!',
+          text: '',
+        })
+    }
 }
 function newVrInp()
 {
