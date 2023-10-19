@@ -56,4 +56,9 @@ function newVrInp()
     let gameResult = valTeamEsos + ":" + valTeamAnother;
     let whTP = "\n" + valTime + "," + valTeamName + "," + valName + "," + valPointsGet + "," + gameResult;
     listArMn.push(whTP);
+    Swal.fire({
+  icon: 'info',
+  title: 'Bija pielikts iemetiens!',
+  text: 'Bija nospiesta poga!',
+})
 }
