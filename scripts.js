@@ -51,4 +51,9 @@ function newVrInp()
     let gameResult = valTeamEsos + ":" + valTeamAnother;
     let whTP = "\n" + valTime + "," + valTeamName + "," + valName + "," + valPointsGet + "," + gameResult;
     listArMn.push(whTP);
+
+
+    Swal.fire(
+  'Fails bija lejupieladēt!'
+)
 }
